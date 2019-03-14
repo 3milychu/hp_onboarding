@@ -76,6 +76,61 @@ animation = lottie.loadAnimation({
   path: 'data/1/data.json' // the path to the animation json
 });
 
+
+window.addEventListener('touchstart', function() {
+	element.innerHTML="";
+	console.log(animation.path)
+	if(animation.path=="data/1/"){
+		grey();
+		document.querySelector('#l2').style.backgroundColor="#666666";
+		getAnim(2);
+		animation.setSpeed(0.5);
+	} else if (animation.path=="data/2/"){
+		grey();
+		document.querySelector('#l3').style.backgroundColor="#666666";
+		getAnim(3);
+		animation.setSpeed(0.8);
+	} else if (animation.path=="data/3/"){
+		grey();
+		document.querySelector('#l4').style.backgroundColor="#666666";
+		getAnim(4);
+		animation.setSpeed(0.5);
+	} else if (animation.path=="data/4/"){
+		grey();
+		document.querySelector('#l5').style.backgroundColor="#666666";
+		getAnim(5);
+	} else if (animation.path=="data/5/"){
+		grey();
+		document.querySelector('#l6').style.backgroundColor="#666666";
+		getAnim(6);
+	} else if (animation.path=="data/6/"){
+		grey();
+		document.querySelector('#l7').style.backgroundColor="#666666";
+		getAnim(7);
+	} else if (animation.path=="data/7/"){
+		grey();
+		document.querySelector('#l8').style.backgroundColor="#666666";
+		getAnim(8);
+	} else if (animation.path=="data/8/"){
+		grey();
+		document.querySelector('#l9').style.backgroundColor="#666666";
+		getAnim(9);
+	} else if (animation.path=="data/9/"){
+		grey();
+		document.querySelector('#l10').style.backgroundColor="#666666";
+		getAnim(10);
+	} else if (animation.path=="data/10/"){
+		grey();
+		document.querySelector('#l11').style.backgroundColor="#666666";
+		getAnim(11);
+	} else if (animation.path=="data/11/"){
+		grey();
+		document.querySelector('#l1').style.backgroundColor="#666666";
+		getAnim(1);
+	} 
+
+});
+
 element.onclick=function() {
 	element.innerHTML="";
 	console.log(animation.path)
