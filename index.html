@@ -77,8 +77,8 @@ animation = lottie.loadAnimation({
   path: 'data/1/data.json' // the path to the animation json
 });
 
-
-window.addEventListener('touchstart', function() {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	window.addEventListener('touchstart', function() {
 	element.innerHTML="";
 	console.log(animation.path)
 	if(animation.path=="data/1/"){
@@ -129,8 +129,8 @@ window.addEventListener('touchstart', function() {
 		document.querySelector('#l1').style.backgroundColor="#666666";
 		getAnim(1);
 	} 
-
 });
+} else {
 
 element.onclick=function() {
 	element.innerHTML="";
@@ -184,6 +184,10 @@ element.onclick=function() {
 		getAnim(1);
 	} 
 }
+
+}
+
+
 
 controls = document.querySelectorAll('.progress div');
 console.log(controls);
