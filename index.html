@@ -53,7 +53,6 @@ body, html {
 	<div id="l1"></div>
 	<div id="l2"></div>
 	<div id=l3></div>
-	<div id=l4></div>
 	<div id=l5></div>
 	<div id=l6></div>
 	<div id=l7></div>
@@ -92,11 +91,6 @@ animation = lottie.loadAnimation({
 		getAnim(3);
 		animation.setSpeed(0.8);
 	} else if (animation.path=="data/3/"){
-		grey();
-		document.querySelector('#l4').style.backgroundColor="#666666";
-		getAnim(4);
-		animation.setSpeed(0.5);
-	} else if (animation.path=="data/4/"){
 		grey();
 		document.querySelector('#l5').style.backgroundColor="#666666";
 		getAnim(5);
@@ -146,11 +140,6 @@ element.onclick=function() {
 		getAnim(3);
 		animation.setSpeed(0.8);
 	} else if (animation.path=="data/3/"){
-		grey();
-		document.querySelector('#l4').style.backgroundColor="#666666";
-		getAnim(4);
-		animation.setSpeed(0.5);
-	} else if (animation.path=="data/4/"){
 		grey();
 		document.querySelector('#l5').style.backgroundColor="#666666";
 		getAnim(5);
@@ -215,9 +204,6 @@ for(i=0;i<controls.length;i++){
 		} else if (id=="l3"){
 			getAnim(3)
 			animation.setSpeed(0.8);
-		}else if (id=="l4"){
-			getAnim(4)
-			animation.setSpeed(0.5);
 		}else if (id=="l5"){
 			getAnim(5)
 		}else if (id=="l6"){
